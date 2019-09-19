@@ -1,0 +1,109 @@
+/* An asterix means all elements are effected....
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* need to clear the "float:left" assignments below, otherwise everything will start floating.
+*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* set a 'global' rule for anything.
+*/
+body {
+    font-size: 15;
+    font-family : Arial, Helvetica, sans-serif;
+}
+/* Set all 'common' elements for the h1 ANDh2 elements in the html document to be the same
+*/
+h1, h2 {
+    color : rgba(51, 255, 0, 0.76); 
+}
+/* Set all the h1 elements in the html document to be the same
+*/
+h1 {
+   font-size :40px;
+   margin-bottom: 20px;
+}
+/* Set all the h2 elements in the html document to be the same
+*/
+h2 {
+    font-size :20px;
+    margin-bottom: 10px;
+ }
+ /* Set all the paragraph elements
+ */
+ p {
+     text-align: center;
+ }
+ /* Style the paragraphs with the maintext class (.)
+ */
+.maintext {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+/* Style the paragraphs with the authortext id (#)
+*/
+#author-text {
+    font-size: 55px;
+    text-align: left;
+    float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.container {
+    width: 1140px;
+    margin: 20px auto 0 auto;
+}
+.blog-post {
+    background-color: rgb(160, 237, 247);
+    width: 75%;
+    float: left;
+    padding-right: 30px;
+    position: relative;
+}
+.other-posts{
+    background-color: gray;
+    width: 25%;
+    float: left;
+}
+.other-blogs {
+    margin-bottom: 40px;
+}
+.author-box{
+    background-color: yellow;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    padding-left:10px;
+    width: 75%;
+    height: 125px;
+}
+.date {
+    position: absolute;
+    top:1;
+    right: 1;
+}
+
+/* IMAGES......
+*/
+.author-box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    float: left;
+}
+.blog-post img {
+    height: 120px;
+    width: auto;
+}
+
+/* use this neat little trick to draw a box around every DIV tag *** very usefull ***
+
+div {
+    border:3px solid #000;
+}
+*/
