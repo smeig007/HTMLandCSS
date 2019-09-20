@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/*
+Green - #67b26f
+Blue  - #4ca2cd
+Mid-colour - #5aaa9d
+*/
+/**/
+* {
+  margin : 9;
+  padding :0;
+  box-sizing: border-box;
+}
+/**/
+body {
+  color: #444;
+  font-family: roboto;
+  padding: 10px;
+  background: linear-gradient(to bottom right, #67b26f, #4ca2cd);
+  /* Occupy 100% of the vertical height - 100v */
+  height: 100vh;
+  display: flex;
+  align-items: center;  /* ALIGN-ITEMS is for the CROSS AXIS */
+  justify-content: center; /* JUSTIFY-CONTENT is for the MAIN AXIS */
+}
+/**/
+.pizza {
+  max-width: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 30px 80px 10px rgba(0,0,0,.2) ;
+  /* This is class is the FLEX CONTAINER - the others are flex items within the container */
+  display: flex;  
+  align-items: stretch;
+  }
+/**/
+.pizza__hero {
+  flex: 0 0 45%;    
+}
+/**/
+.pizza__img {
+  width: 100%;
+  /* Always set images to BLOCK */
+  display: block;
+}
+/**/
+.pizza__content {
+  flex: 1;
+  background: #fff  
+}
+/**/
+.pizza__price {
+  flex: 0 0 50px;
+  background: linear-gradient(to bottom, #67b26f, #4ca2cd); 
+  /* Make the text vertical as opposed to being horizontal */
+  writing-mode: vertical-rl;
+  color: #fff;
+  font-size: 28px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/**/
+/**/
+/**/
+/**/
